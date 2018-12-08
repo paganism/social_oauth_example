@@ -1,0 +1,42 @@
+.body {
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+}
+
+.navbar {
+    background-color: #4a76a8;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    color: #ffffff  !important;
+    font-weight: bold;
+
+}
+
+.navbar-nav {
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    color: #fff;
+}
+
+.btn {
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card {
+    width: 15rem;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    font-size: 14px;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    width: 100%;
+}

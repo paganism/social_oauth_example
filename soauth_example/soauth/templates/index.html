@@ -1,0 +1,30 @@
+{% extends "base_generic.html" %}
+{% block title %}
+Soauth Index
+{% endblock %}
+
+{% block content %}
+
+<p>Welcome. This is a very basic Django website developed as an example of authentication via VK.</p>
+{% if user.is_authenticated %}
+<h2>{{ user.get_username }} friends: </h2>
+
+{% for friend in friends_list %}
+
+<div class="card mt-5 ml-4">
+    <a href="http://vk.com/{{ friend.0.screen_name }}"><img class="card-img-top" src="{{ friend.0.photo_200 }}"
+                                               alt="{{ friend.0.photo_200 }}"></a>
+    <div class="card">
+        <h5 class="card-title text-center">{{ friend.0.first_name }} {{ friend.0.last_name }}</h5>
+        <p class="card-text text-center">Country: {{ friend.0.country.title }}</p>
+        <p class="card-text text-center">City: {{ friend.0.city.title }}</p>
+
+    </div>
+</div>
+{% endfor %}
+{% else %}
+
+{% include 'vk_widget.html'%}
+
+{% endif %}
+{% endblock %}

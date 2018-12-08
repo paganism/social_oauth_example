@@ -1,0 +1,19 @@
+<div class="vk_widget">
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?160"></script>
+    <script type="text/javascript">
+        VK.init({apiId: 6774700});
+    </script>
+    <!-- VK Widget -->
+    <div id="vk_widget">
+        <div id="vk_auth"></div>
+    </div>
+    <script>
+        function VK_Widget_Init(){
+            document.getElementById('vk_auth').innerHTML = "";
+            var vk_width = document.getElementById('vk_widget').clientWidth;
+            VK.Widgets.Auth("vk_auth", {"width": vk_width,"authUrl":"/login/vk-oauth2"});
+        };
+        window.addEventListener('load', VK_Widget_Init, false);
+        window.addEventListener('resize', VK_Widget_Init, false);
+    </script>
+</div>
