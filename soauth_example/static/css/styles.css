@@ -16,7 +16,7 @@
 
 .navbar-nav {
     font-family: -apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
-    color: #fff;
+    color: #ffffff  !important;
 }
 
 .btn {
