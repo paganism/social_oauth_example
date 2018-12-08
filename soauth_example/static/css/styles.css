@@ -40,3 +40,7 @@
     left: 0; bottom: 0;
     width: 100%;
 }
+
+.col-6 {
+    margin-bottom: 20px;
+}
